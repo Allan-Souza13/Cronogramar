@@ -63,6 +63,10 @@ body
   margin-bottom: 4rem;
 }
 
+
+
+
+
 .titulo{
   font-family: 'Playfair Display SC',giorgia;
   font-size: 6rem;
@@ -281,7 +285,83 @@ width: 70ch;
 .materias-descricao section
 {
   margin-bottom: 3rem;
+  
 }
+
+@media(max-width: 1000px)
+{
+  body
+  {
+    grid-template-columns: 1fr;
+  }
+
+  .menu, .grid-section, .copy{
+    grid-column: 1;
+  }
+
+  .grid-section
+  {
+    grid-template-columns: 100px 1fr;
+    grid-gap:10px;
+  }
+
+  .materias-lista{
+    grid-column: 1;
+  }
+
+  .menu{
+    margin-top: 0px;
+  }
+  .copy{ 
+    margin-bottom: 0px;
+  }
+
+  .materias-lista
+    {
+    grid-column: 2/3;
+  }
+  .materias-descricao p
+  {
+   
+    grid-row: 2;
+    max-width: 30ch;
+    text-align: start;
+  }
+
+  .materias h2
+  {
+    font-size: 2rem;
+  }
+
+  .dias h2
+{
+  font-size: .8rem;
+  font-weight: 800;
+}
+
+.seg p
+{
+font-size: 1rem;
+color: #000;
+font-weight: 600;
+}
+}
+
+@media(max-width:500px)
+{
+  .cronograma
+  {
+    display: none;
+  }
+
+  .dias ul
+  {
+    display: flex;
+    flex-wrap:wrap ;
+  }
+}
+
+
 
 /* javascript */
 .js .js-tabcontent section
