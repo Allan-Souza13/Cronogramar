@@ -276,7 +276,10 @@ width: 70ch;
 {
   background: #faf6ed;
 }
-
+.materias-lista img{
+  width: 4000px;
+  height: 500px;
+}
 .materias-descricao
 {
   grid-column: 3;
@@ -288,20 +291,24 @@ width: 70ch;
   
 }
 
+
 @media(max-width: 1000px)
 {
   body
   {
     grid-template-columns: 1fr;
   }
-
+.materias-lista img{
+  width: 180px;
+  height: 180px;
+}
   .menu, .grid-section, .copy{
     grid-column: 1;
   }
 
   .grid-section
   {
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 180px 1fr;
     grid-gap:10px;
   }
 
@@ -318,7 +325,11 @@ width: 70ch;
 
   .materias-lista
     {
-    grid-column: 2/3;
+    grid-column: 1/2;
+  }
+  .materias-descricao
+  {
+    
   }
   .materias-descricao p
   {
@@ -327,6 +338,8 @@ width: 70ch;
     max-width: 30ch;
     text-align: start;
   }
+
+
 
   .materias h2
   {
