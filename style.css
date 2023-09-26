@@ -347,7 +347,7 @@ font-weight: 600;
 }
 }
 
-@media(max-width:500px)
+/* @media(max-width:500px)
 {
   .cronograma
   {
@@ -359,7 +359,7 @@ font-weight: 600;
     display: flex;
     flex-wrap:wrap ;
   }
-}
+} */
 
 
 
